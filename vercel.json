@@ -1,11 +1,12 @@
 {
   "version": 2,
   "builds": [
-    { "src": "IPANAC_Final/src/**/*", "use": "@vercel/node" },
-    { "src": "IPANAC_Final/api/index.js", "use": "@vercel/node" }
+    { "src": "IPANAC_Final/dist/**", "use": "@vercel/static" }, // Serve static React build
+    { "src": "IPANAC_Final/api/index.js", "use": "@vercel/node" } // Serve API
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "IPANAC_Final/api/index.js" },
-    { "src": "/(.*)", "dest": "IPANAC_Final/src/$1" }
+    { "src": "/api/(.*)", "dest": "IPANAC_Final/api/index.js" }, // API routes
+    { "src": "/(.*)", "src": "IPANAC_Final/dist/$1" }, // Serve static files
+    { "src": "/", "dest": "IPANAC_Final/dist/index.html" } // Serve React app root
   ]
 }
