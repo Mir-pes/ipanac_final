@@ -1,12 +1,15 @@
 {
   "version": 2,
   "builds": [
-    { "src": "IPANAC_Final/dist/**", "use": "@vercel/static" }, 
-    { "src": "IPANAC_Final/api/index.js", "use": "@vercel/node" } 
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "IPANAC_Final/api/index.js" }, 
-    { "src": "/(.*)", "src": "IPANAC_Final/dist/$1" }, 
-    { "src": "/", "dest": "IPANAC_Final/dist/index.html" } 
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
   ]
 }
