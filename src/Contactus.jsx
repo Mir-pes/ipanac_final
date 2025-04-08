@@ -21,7 +21,7 @@ function ContactUs() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://ipanac-final-1.vercel.app//api/contact", {
+      const response = await fetch("https://ipanac-final-2.vercel.app/api/index", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
