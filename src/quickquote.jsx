@@ -38,7 +38,7 @@ function Quote() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://ipanac-final-2.vercel.app/api/index", {
+      const response = await fetch("https://ipanac-final-pg1q.vercel.app//api/index", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
