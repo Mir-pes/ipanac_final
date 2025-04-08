@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import connectDB from './db.js';
 import Contact from '../models/Contact.js';
 import Enquiry from '../models/Enquiry.js';
