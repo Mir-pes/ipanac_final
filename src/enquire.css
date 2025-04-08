@@ -1,0 +1,291 @@
+/* New Structure Styles */
+.enquire-page {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    min-height: 100vh;
+}
+
+.enquire-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.enquire-logo-section {
+    flex: 1;
+    min-width: 300px;
+    padding: 40px;
+    background-color: #ff3333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+}
+
+.enquire-logo-section h2 {
+    margin: 20px 0 10px;
+    font-size: 28px;
+}
+
+.enquire-logo {
+    height: 100px;
+    width: auto;
+    
+}
+
+.tagline {
+    font-size: 16px;
+    opacity: 0.9;
+    color:#666;
+}
+
+.enquire-form-section {
+    flex: 1;
+    min-width: 300px;
+    padding: 40px;
+}
+
+.enquire-form-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.Message{
+    display: flex;
+    margin-right: 3px;
+    margin-left: 130px;
+    font-size: 35px;
+}
+
+/* Original Styles (Preserved Exactly) */
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px; 
+    width: 100%;
+}
+
+.inputs {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.input-group {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    align-self: center;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 5px 5px;
+    margin-top: 12px;
+    width: 75%;
+    max-width: 400px;
+    margin-left: 0;
+}
+
+.name{
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 1px;
+}
+
+.input-group .input {
+    margin-top: 0;
+}
+
+.input svg {
+    margin-right: 10px;
+}
+
+.input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 3px 0;
+    width: 100%;
+}
+
+.dropdown {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 3px 0;
+    width: 100%;
+}
+
+.Items{
+    display: flex;
+    margin-top: 12px;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-left: -40px;
+    width: 100%;
+    margin-top:15.2px;
+
+}
+
+.checkbox-group1{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 5px ;
+    width: 100%;
+    margin-left: 20px;
+    margin-top:7.5px;
+}
+
+.checkbox-group2{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 100px;
+    width: 100%;
+    margin-top: -1px;
+}
+
+.checkbox-group3{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 100px;
+    width: 100%;
+    margin-top: -1px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.header {
+    text-align: center;
+    font-size: x-large;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color:red;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 97px;
+}
+
+.submit {
+    background-color:red;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 15px;
+        max-width: 100%;
+    }
+    
+    .inputs {
+        width: 100%;
+    }
+    
+    .input-group {
+        width: 100%;
+    }
+    
+    .input {
+        width: 100%;
+    }
+    
+    .checkbox-group, 
+    .checkbox-group1, 
+    .checkbox-group2, 
+    .checkbox-group3 {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+        gap: 5px;
+    }
+    
+    .checkbox-group1 {
+        margin-left: 0;
+    }
+    
+    .checkbox-group2,
+    .checkbox-group3 {
+        margin: 10px 0;
+    }
+    
+    .header {
+        font-size: large;
+    }
+    
+    .submit {
+        width: 100%;
+        padding: 10px 20px;
+    }
+}
+
+/* Medium screens */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .inputs {
+        width: 60%;
+    }
+    
+    .input {
+        width: 90%;
+    }
+}
+
+/* Additional responsive styles for new structure */
+@media (max-width: 768px) {
+    .enquire-wrapper {
+        flex-direction: column;
+    }
+
+    .enquire-logo-section,
+    .enquire-form-section {
+        padding: 20px;
+    }
+}

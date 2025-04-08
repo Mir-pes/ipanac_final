@@ -1,0 +1,157 @@
+/* Hero.css */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -64px ;/* Added !important */
+  }
+  
+  .hero-text {
+    /* font-size: 16px; */
+    text-align: center;
+    letter-spacing: 0.05em;
+    max-width: 90%;
+    line-height: 1.5;
+    margin-top: 150px;
+  }
+
+
+ .para{
+    /* display: flex;
+    align-items: center; */
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    margin-top: 16.3px;
+    margin-left: 8px;
+    
+}
+
+
+.second-hero-container{
+    margin-top:40px;
+    margin-right: 1090px;
+
+}
+
+.why-choose-card {
+    
+    max-width: 1200px;
+    margin: 24px auto;
+    padding: 20px;
+    background-color: lightcoral;
+    border-radius: 9px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .card-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 11.5px;
+  }
+  
+  .card-title {
+    font-size: 28px;
+    margin: 0;
+    text-align: center;
+    color: #333;
+  }
+  
+  .card-subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    text-align: center;
+    color: #555;
+    white-space: normal; /* Allows text to wrap naturally */
+  }
+
+.bold{
+    font-size:17px;
+    margin-left: 6px;
+}
+
+.bold2{
+    font-size:17px;
+    margin-left: 20px;
+}
+
+.bold3{
+    font-size:17px;
+    margin-left: -5.9px;
+}
+
+.card-subtitle2{
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+    color: #555;
+    font-size: 16px;
+    
+    
+}
+
+
+.card-subtitle3{
+    text-align: center; 
+    color: #555;
+    font-size: 16px;
+    
+    
+}
+
+
+.card-subtitle4{
+    text-align: center;
+    color:#555;
+
+}
+
+
+.services{
+
+    max-width: 1200px;
+    margin: 24px auto;
+    padding: 20px;
+    background-color: lightcoral;
+    border-radius: 9px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.title-card2{
+    font-size:28px;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-top: -7px;
+    color:#333;
+}
+
+.card-subtitle5{
+    text-align: center;
+    color:#555;
+    padding: 8.3px;
+    margin-bottom: 3px;
+
+}
+
+.bold5{
+    font-size:17px;
+    margin-left: -5.9px;
+}
+
+
+
+
+  /* Media query for small devices */
+  @media (min-width: 640px) {
+    .hero-text {
+      font-size: 21.2px;
+    }
+  }
+  
+  /* Media query for large devices */
+  

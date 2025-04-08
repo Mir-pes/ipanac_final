@@ -1,0 +1,306 @@
+/* Workflow.css */
+
+.workflow-container {
+  margin-top: 5rem;
+}
+
+.workflow-heading {
+  font-size:25px !important;
+  color: red;
+  text-align: center;
+  margin-top: 32px;
+  font-weight: 600;
+  background-color: transparent;
+  display: block;
+  letter-spacing: 1px;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.workflow-heading::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3.5px;
+  background-color: red;
+  margin: 8px auto 0;
+  transition: all 0.3s ease;
+}
+
+.workflow-heading:hover{
+  transform: translate(-1.9px);
+  background-color: black;
+}
+
+.workflow-heading:hover::after{
+  width: 294px;
+}
+
+.gradient-text {
+  background-image: linear-gradient(to right, red , red);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* Statement Styling */
+.statement-container {
+  max-width: 960px;
+  margin: 1rem auto 2rem;
+  padding: 1.5rem 2rem;
+  border-left: 4px solid red;
+  background-color: rgba(255, 0, 0, 0.03);
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.mission-container {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.vision-container {
+  margin-top: 4rem;
+}
+
+.statement-heading {
+  color: red;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.statement-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  font-style: italic;
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Mission and Vision Image Styling */
+.mission-image-wrapper,
+.vision-image-wrapper {
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.mission-image-wrapper:hover,
+.vision-image-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mission-image,
+.vision-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.mission-image-wrapper:hover .mission-image,
+.vision-image-wrapper:hover .vision-image {
+  transform: scale(1.02);
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-container {
+ 
+  width: 30px ;
+  /* height: 150px !important; */
+}
+
+.image-container img {
+  width: 98%;
+  height: 95%;
+  
+}
+
+.checklist-container {
+  padding-top: 3rem;
+  width: 100%;
+}
+
+.checklist-item {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.icon-wrapper {
+  color: red;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  background-color: #171717;
+  height: 36px;
+  width: 36px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+}
+
+.item-content-title {
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 17.1px;
+}
+
+.item-content-description {
+  font-size: 1rem;
+  color: #737373;
+}
+
+.flash-message {
+  margin-top: 28px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  color: red;
+  font-size: 18.8px;
+  font-weight: 550;
+  text-transform: uppercase; 
+  letter-spacing: 0.6px; 
+  
+  animation: 
+    fadeIn 0.6s ease-out,
+    subtleBounce 2s infinite;
+  
+  transition: all 0.3s ease;
+}
+
+.flash-message:hover {
+  color: #ff0000; 
+  text-shadow: 0 0 8px rgba(255, 0, 0, 0.3); 
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes subtleBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.contact-us{
+  display: inline-block;
+  margin-top: 17.2px;
+  border: 1px solid black;
+  border: none;
+  max-width: 300px;
+  padding: 7px 17px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: red;
+  color:white;
+  border-radius:14px;
+  font-size: 18px;
+  font-weight: 450;
+  text-decoration: none !important;
+  box-shadow: 0 7px 7px rgba(85, 5, 5, 0.918);
+  transition: all 0.3s ease;
+
+  
+  
+}
+
+.contact-us:hover {
+  background-color: red;
+  transform: translateY(-3.2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-us:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(172, 13, 13);
+}
+
+
+/* Mobile Responsive Additions */
+@media (max-width: 768px) {
+  .workflow-container {
+    padding: 0 15px;
+  }
+
+  /* Flex container for image + checklist */
+  .workflow-container > div[style*="flex-direction: row"] {
+    flex-direction: column !important;
+    gap: 30px !important;
+    margin: 30px 0 !important;
+  }
+
+  /* Image container */
+  .workflow-container > div[style*="flex-direction: row"] > div:first-child {
+    max-width: 100% !important;
+    order: 1;
+  }
+
+  /* Image adjustments */
+  .workflow-container img[alt="Relocation Services"] {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 500px;
+    padding: 0 !important;
+  }
+
+  /* Checklist container */
+  .workflow-container > div[style*="flex-direction: row"] > div:last-child {
+    max-width: 100% !important;
+    padding: 0 10px;
+  }
+
+  /* Mission/vision statements */
+  .statement-container {
+    margin: 1rem auto !important;
+    padding: 1rem !important;
+  }
+
+  .statement-text {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .workflow-heading {
+    font-size: 22px !important;
+  }
+
+  .workflow-heading:hover::after {
+    width: 200px !important;
+  }
+
+  .icon-wrapper {
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+  }
+
+  .item-content-title {
+    font-size: 16px !important;
+  }
+
+  .item-content-description {
+    font-size: 0.9rem !important;
+  }
+}
